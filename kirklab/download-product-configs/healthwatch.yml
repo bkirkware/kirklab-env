@@ -1,5 +1,5 @@
 ---
-pivnet-api-token: ((pivnet_token))
+pivnet-api-token: ((pivnet-refresh-token))
 ## Note that file globs must be quoted if they start with *;
 ## otherwise they'll be interpreted as a YAML anchor.
 pivnet-file-glob: "*.pivotal"
