@@ -12,4 +12,4 @@ pivnet-product-slug: ops-manager
 ## as escape characters for the regex will confuse yaml parsers.
 product-version-regex: ^2\.4\..*$
 
-stemcell-iaas: vsphere
+#stemcell-iaas: vsphere
