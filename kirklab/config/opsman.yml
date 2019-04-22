@@ -1,0 +1,27 @@
+---
+opsman-configuration:
+  vsphere:
+    vcenter:
+      url: vcenter.kirklab.io
+      username: administrator@vsphere.local
+      password: ((vcenter-password))
+      datastore: carbonite
+      #ca_cert: certificate
+      host: example-host                     # vCenter host to deploy Ops Manager in
+      datacenter: example-dc
+      resource_pool: /kirklab/kirklab-pks-cluster/Resources/RP-MGMT-PKS # or /<Data Center Name>/host/<Cluster Name>
+      folder: /kirklab/pks_vms
+      insecure: 1                            # default: 0 (secure); 1 (insecure)
+    disk_type: thin                          # example: thin|thick
+    private_ip: 192.168.22.2
+    dns: 192.168.1.1
+    ntp: time1.google.com                    # example: ntp.ubuntu.com
+    ssh_password: ((opsman-password))
+    #ssh_public_key: ssh-rsa ......           # for OpsManager >= 2.3
+    hostname: opsman.kirklab.io
+    network: LS-MGMT-PKS                 # vcenter network to deploy to
+    netmask: 255.255.255.0
+    gateway: 192.168.22.1
+    vm_name: Ops_Manager                     # default: Ops_Manager
+    memory: 8                                # default: 8 GB
+    cpu: 1                                   # default: 1
