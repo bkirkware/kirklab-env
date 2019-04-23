@@ -10,6 +10,7 @@ pivnet-product-slug: p-spring-cloud-services
 
 ## Note that the regex mustn't be quoted,
 ## as escape characters for the regex will confuse yaml parsers.
-product-version-regex: ^2\.0\..*$
+#product-version-regex: ^2\.0\..*$
+product-version-regex: 2.0.7
 
 stemcell-iaas: vsphere
