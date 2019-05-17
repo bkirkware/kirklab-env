@@ -1,3 +1,3 @@
 ---
 iaas: vsphere
-vm_id: /kirklab/vm/Control_Ops_Manager
+vm_id: /kirklab/vm/control_vms/Control_Ops_Manager
