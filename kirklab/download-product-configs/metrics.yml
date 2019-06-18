@@ -11,6 +11,6 @@ pivnet-product-slug: apm
 ## Note that the regex mustn't be quoted,
 ## as escape characters for the regex will confuse yaml parsers.
 #product-version-regex: ^1\.6\..*$
-product-version-regex: 1.6.0
+product-version-regex: 1.6.1
 
 stemcell-iaas: vsphere
