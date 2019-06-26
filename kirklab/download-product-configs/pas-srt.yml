@@ -6,7 +6,7 @@ pivnet-file-glob: "srt*.pivotal"
 pivnet-product-slug: cf
 
 ## Either product-version OR product-version-regex is required
-product-version: ^2\.6\..*$
+product-version: 2.6.0
 
 ## Note that the regex mustn't be quoted,
 ## as escape characters for the regex will confuse yaml parsers.
