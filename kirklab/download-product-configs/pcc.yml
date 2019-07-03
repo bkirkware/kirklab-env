@@ -12,7 +12,7 @@ pivnet-product-slug: p-cloudcache
 ## Any key marked required above is still required when using S3.
 ## If s3-bucket is set,
 ## downloaded product files will have their slug and version prepended.
-s3-bucket: ((minio_buckets_platform_automation))
+s3-bucket: ((minio_buckets_pivnet))
 s3-endpoint: ((minio_endpoint))   # if not using AWS, this is required
 
 ## Required unless `s3-auth-method` is `iam`
