@@ -22,6 +22,7 @@ stemcell-iaas: vsphere
 ## downloaded product files will have their slug and version prepended.
 s3-bucket: ((minio_buckets_pivnet_products))
 s3-endpoint: ((minio_endpoint))   # if not using AWS, this is required
+s3-region-name: kirklab
 
 ## Required unless `s3-auth-method` is `iam`
 s3-access-key-id: ((minio_access_key_id))
