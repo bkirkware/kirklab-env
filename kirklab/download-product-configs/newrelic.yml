@@ -14,3 +14,17 @@ pivnet-product-slug: p-new-relic
 product-version-regex: ^1\.12\..*$
 
 stemcell-iaas: vsphere
+
+## The following are required only if using download-product-s3.
+## Any key marked required above is still required when using S3.
+## If s3-bucket is set,
+## downloaded product files will have their slug and version prepended.
+s3-bucket: ((minio_buckets_pivnet_products))
+s3-endpoint: ((minio_endpoint))   # if not using AWS, this is required
+s3-region-name: kirklab
+
+## Required unless `s3-auth-method` is `iam`
+s3-access-key-id: ((minio_access_key_id))
+s3-secret-access-key: ((minio_secret_access_key))
+s3-stemcell-path: /newrelic-stemcell
+s3-disable-ssl: true
