@@ -2,15 +2,16 @@
 pivnet-api-token: ((pivnet-refresh-token))
 ## Note that file globs must be quoted if they start with *;
 ## otherwise they'll be interpreted as a YAML anchor.
-pivnet-file-glob: "srt*.pivotal"
-pivnet-product-slug: cf
+pivnet-file-glob: "*.pivotal"
+pivnet-product-slug: pivotal-container-service
 
 ## Either product-version OR product-version-regex is required
-#product-version: 2.6.1
+# product-version: 1.2.3
 
 ## Note that the regex mustn't be quoted,
 ## as escape characters for the regex will confuse yaml parsers.
-product-version-regex: ^2\.4\..*$
+#product-version-regex: ^1\.3\..*$
+product-version-regex: ^1\.4\..*$
 
 stemcell-iaas: vsphere
 
@@ -25,5 +26,5 @@ s3-region-name: kirklab
 ## Required unless `s3-auth-method` is `iam`
 s3-access-key-id: ((minio_access_key_id))
 s3-secret-access-key: ((minio_secret_access_key))
-s3-stemcell-path: /pas-srt-stemcell
+s3-stemcell-path: /pks-stemcell
 s3-disable-ssl: true
