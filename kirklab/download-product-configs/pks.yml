@@ -26,5 +26,5 @@ s3-region-name: kirklab
 ## Required unless `s3-auth-method` is `iam`
 s3-access-key-id: ((minio_access_key_id))
 s3-secret-access-key: ((minio_secret_access_key))
-s3-stemcell-path: /scdf-stemcell
+s3-stemcell-path: /scdf-stemcell # since PKS references an ancient stemcell in its metadata, using SCDF's instead
 s3-disable-ssl: true
