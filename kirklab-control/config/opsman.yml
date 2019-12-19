@@ -7,7 +7,7 @@ opsman-configuration:
       password: ((vcenter-password))
       datastore: carbonite
       #ca_cert: certificate
-      host: 192.168.10.8                     # vCenter host to deploy Ops Manager in
+      #host: 192.168.10.8                     # vCenter host to deploy Ops Manager in
       datacenter: kirklab
       resource_pool: /kirklab/host/kirklab-cluster/Resources/RP-CONTROL # or /<Data Center Name>/host/<Cluster Name>
       folder: /kirklab/vm/control_vms
