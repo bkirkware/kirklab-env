@@ -1,0 +1,30 @@
+---
+pivnet-api-token: ((pivnet-refresh-token))
+## Note that file globs must be quoted if they start with *;
+## otherwise they'll be interpreted as a YAML anchor.
+pivnet-file-glob: "*.pivotal"
+pivnet-product-slug: p_spring-cloud-gateway-service
+
+## Either product-version OR product-version-regex is required
+# product-version: 1.2.3
+
+## Note that the regex mustn't be quoted,
+## as escape characters for the regex will confuse yaml parsers.
+#product-version-regex: ^2\.0\..*$
+product-version-regex: ^1\.0\..*$
+
+stemcell-iaas: vsphere
+
+## The following are required only if using download-product-s3.
+## Any key marked required above is still required when using S3.
+## If s3-bucket is set,
+## downloaded product files will have their slug and version prepended.
+s3-bucket: kirklab-pivnet-products
+s3-endpoint: ((minio_endpoint))   # if not using AWS, this is required
+s3-region-name: kirklab
+
+## Required unless `s3-auth-method` is `iam`
+s3-access-key-id: ((minio_access_key_id))
+s3-secret-access-key: ((minio_secret_access_key))
+s3-stemcell-path: /scg-stemcell
+s3-disable-ssl: true
