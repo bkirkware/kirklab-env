@@ -14,7 +14,7 @@ pivnet-product-slug: VMware-NSX-T
 #product-version-regex: ^1\.6\..*$
 product-version-regex: ^2\.5\..*$
 
-stemcell-iaas: vsphere
+#stemcell-iaas: vsphere
 
 ## The following are required only if using download-product-s3.
 ## Any key marked required above is still required when using S3.
