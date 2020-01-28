@@ -3,7 +3,7 @@ pivnet-api-token: ((pivnet-refresh-token))
 ## Note that file globs must be quoted if they start with *;
 ## otherwise they'll be interpreted as a YAML anchor.
 pivnet-file-glob: "*.pivotal"
-pivnet-product-slug: p_spring-cloud-gateway-service
+pivnet-product-slug: spring-cloud-gateway
 
 ## Either product-version OR product-version-regex is required
 # product-version: 1.2.3
