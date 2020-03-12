@@ -50,7 +50,7 @@ product-properties:
     value: simple
   .properties.nsx_auth.simple.nsx_api_password:
     value:
-      secret: ((properties-nsx-auth-simple-nsx-api-password.secret))
+      secret: ((properties_nsx_auth_simple_nsx_api_password.secret))
   .properties.nsx_auth.simple.nsx_api_user:
     value: admin
   .properties.nsx_node_agent_debug_log:
