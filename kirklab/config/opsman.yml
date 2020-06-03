@@ -17,7 +17,7 @@ opsman-configuration:
     dns: 192.168.1.1
     ntp: time1.google.com                    # example: ntp.ubuntu.com
     #ssh_password: ((opsman-password))
-    ssh_public_key: ((opsman-ssh-key.public_key))           # for OpsManager >= 2.3
+    ssh_public_key: ((opsman-public-ssh-key))           # for OpsManager >= 2.3
     hostname: opsman.kirklab.io
     network: LS-MGMT-PKS                 # vcenter network to deploy to
     netmask: 255.255.255.0
